@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .animation-delay-100 {
+    animation-delay: 0.1s;
+  }
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+  .shadow-glow {
+    box-shadow: 0 0 12px currentColor;
+  }
+}
+
+/* Custom cursor for desktop */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  a, button, [role="button"] {
+    cursor: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .cursor-glow, .cursor-dot {
+    display: none;
+  }
+}
